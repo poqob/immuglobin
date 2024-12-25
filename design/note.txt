@@ -1,0 +1,64 @@
+E-LABORATUVAR SİSTEMİ deadline 31.12.24
+
+kısa bilgi dokümanı 
+
+Kimlik doğrulama (Authentication)
+yetkilendirme (Authorization)
+Kullanıcı Profil Yönetimi (Kayıt, Düzenleme, vb.)
+
+roller: 
+hasta, doktor(admin)
+
+
+Kullanıcı Tarafı 
+Geçmiş Tahlillerin listelenmesi, görüntülenmesi, 
+Tahlil değerlerinin (IgA, IgM, IgG, IgG1, IgG2, IgG3, IgG4) tüm raporlarda aranması ve 
+sonuçların düşük, normal, yüksek olarak farklı renklerde görüntülenmesi ↑ ↓ ↔ 
+Kullanıcı Profil yönetimi
+
+Yönetici Tarafı 
+Kılavuz oluşturma, veri girişi 
+Oluşturulan kılavuzlarda hastanın yaşına göre (IgA, IgM, IgG, IgG1, IgG2, IgG3, IgG4) değer 
+arama 
+Hasta takibi, ad soyad girildiğinde hastanın tarihlere göre tahlillerinin getirilmesi ve listeleme 
+Listelenen tahliller arasında geçmiş değerler arasında değişim yok, artmış ya da azalmış şeklinde 
+kıyaslama
+
+grafikler ile ifade etmek???
+
+
+uygulama platformu: Flutter ~ React Native
+
+db: 
+
+
+
+:unsurlar:
+
+ön yüz: Flutter ~ React Native
+arka yüz: Flask, 
+veri tabanı: mongodb
+
+
+:tasarım:
+
+arayüz:
+
+veri tabanı api
+-kullanıcı operasyonları
+-kılavuz operasyonları
+-
+backend api
+
+
+
+You may also update the Gradle version used by running
+`./gradlew wrapper --gradle-version=<COMPATIBLE_GRADLE_VERSION>`.
+
+See
+https://docs.gradle.org/current/userguide/compatibility.html#java for details
+on compatible Java/Gradle versions, and see
+https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:upgrading_wrapper
+for more details on using the Gradle Wrapper command to update the Gradle version
+used.
+used.
