@@ -1,58 +1,58 @@
 <mxfile host="65bd71144e">
     <diagram id="qN6F-nI2C2L-OjJlu-pw" name="Page-1">
-        <mxGraphModel dx="1935" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1947" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="auth_api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="auth_api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="130" width="70" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="İms" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="3" value="İms" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="470" y="40" width="70" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="auth_api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="5" value="auth_api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="130" width="70" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="authorize&lt;br&gt;api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="6" value="authorize&lt;br&gt;api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="40" width="70" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="authorize&lt;br&gt;api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="7" value="authorize&lt;br&gt;api" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="40" width="70" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="person" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="8" value="person" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="570" y="40" width="70" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="ims" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="9" value="ims" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="570" y="110" width="70" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="roles" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="10" value="roles" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="570" y="180" width="70" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="P" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="11" value="P" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry y="400" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="C" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="12" value="C" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-10" y="920" width="40" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;db elements&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;db elements&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-210" y="960" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;models&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;models&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-210" y="1020" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;graphs&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="15" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;graphs&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-50" y="960" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;splash&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="16" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;splash&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-40" y="440" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;settings&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;settings&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="110" y="440" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;entrance&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="18" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;entrance&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="-190" y="440" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;report&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="19" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;report&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="250" y="440" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
