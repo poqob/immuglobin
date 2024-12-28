@@ -1,9 +1,8 @@
 import 'dart:async';
-import 'package:immuglobin/api/db_api.dart';
+import 'package:immuglobin/api/auth_service.dart';
 import 'package:immuglobin/model/doctor.dart';
 import 'package:immuglobin/model/patience.dart';
 import 'package:immuglobin/model/role.dart';
-import 'package:immuglobin/model/user.dart';
 
 final joe = Doctor(
     id: 1,
@@ -27,25 +26,14 @@ final helga = Patience(
     bornPlace: "Agora",
     patience_type: "urgent");
 
-Future<void> addDumpUser() async {
-  await register(joe);
-  await register(helga);
+Future<void> addDumpUser(AuthService authServ) async {
+  await authServ.register(joe);
+  await authServ.register(helga);
 }
 
 Future<void> main() async {
-  // await addDumpUser();
-  // FutureOr<User?> user = await authenticate(joe.email, joe.password);
-  // print(user);
-  // await register(helga);
+  AuthService authService = AuthService();
 
-  // FutureOr<User?> usere = await authenticate(helga.email, helga.password);
-  // print(usere);
-
-  // final response =
-  //     await update_password(joe.email, joe.password, 'newpassword123');
-  // print(response);
-
-  // print(delete_user(joe.email, joe.password));
-  fetchData();
-  // print(delete_user(joe.email, joe.password));
+  final user = await authService.authenticate(helga.email, helga.password);
+  await authService.authorize(user!, user.role.permissions);
 }
