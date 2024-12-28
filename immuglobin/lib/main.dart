@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:immuglobin/features/appinfo/view/appinfo_screen.dart';
 import 'package:immuglobin/features/dump/view/dump_screen.dart';
 import 'package:immuglobin/features/hello/view/hello_screen.dart';
+import 'package:immuglobin/features/home/view/home_screen.dart';
 import 'package:immuglobin/features/login/view/login_screen.dart';
 import 'package:immuglobin/features/register/view/register_screen.dart';
 import 'package:immuglobin/features/settings/view/settings_screen.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Navigation Example',
+      title: 'Megali İdea',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => RegisterScreen(),
         '/settings': (context) => SettingsScreen(),
+        '/home': (context) => HomeScreen(),
+        '/appinfo': (context) => const AppInfoScreen(),
       },
     );
   }

@@ -34,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (user != null) {
         // If login is successful, navigate to user main page
-        Navigator.pushReplacementNamed(context, '/dump');
+        Navigator.pushReplacementNamed(context, '/home');
       } else {
         // If login fails, show error message
         ScaffoldMessenger.of(context).showSnackBar(

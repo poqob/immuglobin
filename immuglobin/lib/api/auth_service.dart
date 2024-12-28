@@ -57,6 +57,19 @@ class AuthService {
     return response.data;
   }
 
+  Future<Map<String, dynamic>> updateEMail(
+      String email, String password, String newEmail) async {
+    final authUser = await authenticate(email, password);
+    if (authUser == null) return {'error': 'Wrong email or password.'};
+
+    final response = await api.post('/change_email', {
+      'old_email': email,
+      'password': password,
+      'new_email': newEmail,
+    });
+    return response.data;
+  }
+
   Future<void> saveUserData(User user) async {
     Session.setUser(user);
   }

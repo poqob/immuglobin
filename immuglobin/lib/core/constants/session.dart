@@ -10,4 +10,8 @@ class Session {
   static User? getUser() {
     return user;
   }
+
+  static void clear() {
+    user = null;
+  }
 }
