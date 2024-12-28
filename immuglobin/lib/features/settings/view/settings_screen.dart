@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:immuglobin/api/auth_service.dart'; // Updated import for the new AuthService
+import 'package:immuglobin/api/auth_service.dart';
+import 'package:immuglobin/core/constants/session.dart'; // Updated import for the new AuthService
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -28,12 +29,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _loadUserData() async {
-    final userData =
-        await authApi.getUserData(); // Fetch user data from SharedPreferences
+    final userData = Session.getUser();
     setState(() {
-      email = userData['email']; // Set the email from the saved data
-      password = userData['password']; // Set the password from the saved data
-      role = userData['role']['role'];
+      email = userData!.email;
+      password = userData.password;
+      role = userData.role.role;
     });
   }
 
