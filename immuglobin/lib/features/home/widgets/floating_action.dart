@@ -14,7 +14,7 @@ void showFabMenu(BuildContext context) {
             title: const Text('Rapor Yaz'),
             onTap: () {
               Navigator.pop(context); // Menü kapatılır.
-              Navigator.pushNamed(context, '/dump');
+              Navigator.pushNamed(context, '/write_report');
             },
           ),
           ListTile(
@@ -22,7 +22,7 @@ void showFabMenu(BuildContext context) {
             title: const Text('Tüm Raporlar'),
             onTap: () {
               Navigator.pop(context); // Menü kapatılır.
-              Navigator.pushNamed(context, '/dump');
+              Navigator.pushNamed(context, '/all_reports');
             },
           ),
           ListTile(
@@ -30,7 +30,7 @@ void showFabMenu(BuildContext context) {
             title: const Text('Kılavuzlar'),
             onTap: () {
               Navigator.pop(context); // Menü kapatılır.
-              Navigator.pushNamed(context, '/dump');
+              Navigator.pushNamed(context, '/referances');
             },
           ),
         ],

@@ -21,7 +21,7 @@ Drawer drawer(BuildContext context) {
           onTap: () {
             Navigator.pushNamed(
               context,
-              '/dump',
+              '/my_reports',
             );
           },
         ),
