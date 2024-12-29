@@ -40,6 +40,11 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
+              'ID: ${user.id}',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 5),
+            Text(
               'E-posta: ${user.email}',
               style: const TextStyle(fontSize: 16),
             ),
