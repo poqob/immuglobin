@@ -28,6 +28,18 @@ class RefValue {
     );
   }
 
+  // RefValue nesnesini JSON'a dönüştürme
+  Map<String, dynamic> toMap() {
+    return {
+      'subj': subj,
+      'gms': gms,
+      'min': min,
+      'max': max,
+      'min_age': minAge,
+      'max_age': maxAge,
+    };
+  }
+
   @override
   String toString() {
     return 'RefValue(subj: $subj, gms: $gms, min: $min, max: $max, minAge: $minAge, maxAge: $maxAge)';

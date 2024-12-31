@@ -1,6 +1,9 @@
 // ignore_for_file: avoid_print
 
+import 'dart:ffi';
+
 import 'package:immuglobin/api/api_service.dart';
+import 'package:immuglobin/model/user.dart';
 
 class UserService {
   final ApiService api;
@@ -17,4 +20,16 @@ class UserService {
         await api.post('/remove', {'email': email, 'password': password});
     return response.data;
   }
+
+  Future<Map<String, dynamic>> getUserById(String id) async {
+    final int parsedId = int.parse(id);
+    final response = await api.post('/get_user_by_id', {'id': parsedId});
+    return response.data;
+  }
+}
+
+Future<void> main() async {
+  final UserService userService = UserService();
+  User user = User.fromJson(await userService.getUserById('11111111111'));
+  print(user);
 }

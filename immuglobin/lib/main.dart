@@ -4,6 +4,8 @@ import 'package:immuglobin/features/dump/view/dump_screen.dart';
 import 'package:immuglobin/features/hello/view/hello_screen.dart';
 import 'package:immuglobin/features/home/view/home_screen.dart';
 import 'package:immuglobin/features/login/view/login_screen.dart';
+import 'package:immuglobin/features/referance/view/add_referance_screen.dart';
+import 'package:immuglobin/features/referance/view/query_referance.dart';
 import 'package:immuglobin/features/referance/view/referance_screen.dart';
 import 'package:immuglobin/features/register/view/register_screen.dart';
 import 'package:immuglobin/features/report/view/all_reports_screen.dart';
@@ -41,6 +43,8 @@ class MyApp extends StatelessWidget {
         '/all_reports': (context) => const AllReportScreen(),
         '/write_report': (context) => const WriteReportScreen(),
         '/my_reports': (context) => const MyReportsScreen(),
+        '/add_referance': (context) => const AddReferanceScreen(),
+        '/query_referance': (context) => const QueryReferanceScreen(),
       },
     );
   }

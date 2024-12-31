@@ -33,6 +33,22 @@ void showFabMenu(BuildContext context) {
               Navigator.pushNamed(context, '/referances');
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.add_circle_outline),
+            title: const Text('Kılavuz Ekle'),
+            onTap: () {
+              Navigator.pop(context); // Menü kapatılır.
+              Navigator.pushNamed(context, '/add_referance');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.search),
+            title: const Text('Kılavuz Sorgula'),
+            onTap: () {
+              Navigator.pop(context); // Menü kapatılır.
+              Navigator.pushNamed(context, '/query_referance');
+            },
+          ),
         ],
       );
     },

@@ -21,6 +21,14 @@ class DataService {
     return List.empty();
   }
 
+  FutureOr<String> addReference(RefDataModel reference) async {
+    final response = await api.post('/submit_referance', reference.toMap());
+    if (response.statusCode == 200 || response.statusCode == 201) {
+      return response.data["inserted_id"];
+    }
+    throw Exception(response.data['error']);
+  }
+
   Future<List<Report>> fetchAllReports() async {
     final response = await api.get('/get_all_reports');
     if (response.statusCode == 200) {
@@ -50,6 +58,7 @@ class DataService {
   }
 
   Future<List<Report>> fetchReportsByUserId(String userId) async {
+    // final id = int.parse(userId);
     final response =
         await api.post('/get_reports_by_user_id', {'user_id': userId});
     if (response.statusCode == 200) {
@@ -65,15 +74,20 @@ class DataService {
 Future<void> main() async {
   final dataService = DataService();
   // final List<RefDataModel> result = await dataService.fetchAllReferences();
-  final report = Report(
-    userId: '11111111111',
-    doctorId: '0',
-    immun: 'IgG1',
-    result: 5.0,
-    timestamp: DateTime.now().toString(),
-  );
+  // final report = Report(
+  //   userId: '11111111111',
+  //   userName: "Kaya Siradaglar",
+  //   doctorId: '0',
+  //   immun: 'IgG1',
+  //   result: 5.0,
+  //   timestamp: DateTime.now().toString(),
+  // );
 
-  print(report);
-  final String insertResult = await dataService.submitReport(report);
-  print(insertResult);
+  // print(report);
+  // final String insertResult = await dataService.submitReport(report);
+  // print(insertResult);
+
+  dataService.fetchAllReferences().then((value) {
+    print(value);
+  });
 }

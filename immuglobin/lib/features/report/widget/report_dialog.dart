@@ -21,9 +21,14 @@ FutureOr<void> showReportDetails(Report report, BuildContext context) async {
           children: [
             Text("Report ID: ${report.id}"),
             Text("Report Owner ID: ${report.userId}"),
+            Text("Owner: ${report.userName}"),
             Text("Doctor ID: ${report.doctorId}"),
-            Text("Immun: ${report.immun}"),
-            Text("Result: ${report.result}"),
+            const SizedBox(height: 8),
+            const Text("Immun Values:"),
+            ...report.immun.entries.map((entry) {
+              return Text("${entry.key}: ${entry.value}");
+            }).toList(),
+            const SizedBox(height: 8),
             Text("Date: ${report.timestamp}"),
           ],
         ),
@@ -49,12 +54,12 @@ FutureOr<void> showReportDetails(Report report, BuildContext context) async {
                 } catch (error) {
                   Navigator.of(context).pop();
 
-                  // ScaffoldMessenger.of(context).showSnackBar(
-                  //   SnackBar(
-                  //     content: Text("Error: $error"),
-                  //     duration: const Duration(seconds: 3),
-                  //   ),
-                  // );
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text("Error: $error"),
+                      duration: const Duration(seconds: 3),
+                    ),
+                  );
                 }
               },
               child: const Text("Remove Report"),
